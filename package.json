@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_backend",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsc -w & nodemon dist/main.js"
+  },
+  "dependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
