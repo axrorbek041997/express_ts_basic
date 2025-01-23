@@ -1,0 +1,15 @@
+services:
+  postgres:
+    container_name: chat_pg
+    image: postgres:latest
+    ports:
+      - "${DB_PORT}:5432"
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+
+  redis:
+    container_name: chat_redis
+    image: redis:latest
+    ports:
+      - "${REDIS_PORT}:6379"
