@@ -4,7 +4,7 @@ import helmet from "helmet";
 import cors from "cors";
 import compression from "compression";
 import router from './modules/router.js'
-import ErrorHandlerMiddleware from './utils/middlewares/error-handler.js'
+import ErrorHandlerMiddleware from './middlewares/error-handler.js'
 
 const app = express()
 
