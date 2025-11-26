@@ -5,11 +5,12 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "test": "vitest",
     "start:dev": "tsc -w & nodemon dist/main.js"
   },
   "dependencies": {
-    "@types/compression": "^1.7.5",
-    "@types/cors": "^2.8.17",
     "compression": "^1.7.5",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -18,6 +19,11 @@
     "joi": "^18.0.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0"
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "vitest": "^4.0.14"
   }
 }
